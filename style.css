@@ -1,9 +1,23 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     color: black;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
 /* Entête*/
+
 
 header{
     position: relative;
@@ -15,4 +29,68 @@ header{
 .header_logo{
     width: 250px;
     padding: 15px 0;
+}
+
+
+/* Localisation */
+
+
+.search{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.localisation_label{
+    font-size: 120%;
+}
+
+.localisation{
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 20px 0;
+    width: 100%;
+}
+
+.localisation_input{
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+
+/* Réservation */
+
+
+.reserve{
+    width: 100%;
+    padding: 40px 20px 80px 20px;
+}
+
+.reserve_title{
+    padding: 5px 40px 15px 40px;
+    font-size: 30px;
+}
+
+.reserve_subtitle{
+    color: #666666;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.btn{
+    color: white;
+    padding: 20px 30px;
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+    transition: filter 450ms, box-shadow 300ms 150ms;
+}
+.btn:hover{
+    filter: brightness(115%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }

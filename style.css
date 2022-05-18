@@ -102,7 +102,7 @@ header{
 .functioning{
     padding: 50px 30px;
 }
-.functioning__list{
+.functioning_list{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ header{
     gap: 25px;
     padding: 30px 20px;
 }
-.functioning__item{
+.functioning_item{
     width: 100%;
     min-width: 280px;
     background-color: #f2f2f2;
@@ -122,23 +122,103 @@ header{
     align-items: center;
     gap: 20px;
 }
-.functioning__number{
+.functioning_number{
     color: white;
     background-color: #9356dc;
     border-radius: 100%;
     padding: 5px 10px;
     margin-left: -15px;
 }
-.functioning__icon{
+.functioning_icon{
     color: #666666;
 }
-.functioning__txt{
+.functioning_txt{
     font-weight: 700;
 }
-.functioning__item:hover {
+.functioning_item:hover {
     background-color: #f2eafb;
 }
-.functioning__item:hover .functioning__icon {
+.functioning_item:hover .functioning_icon {
     color: #9356dc;
     background-color: #f2eafb;
+}
+
+
+/* Restaurants */
+
+
+.restaurants{
+    background-color: #f2f2f2;
+    padding: 50px 30px;
+}
+.restaurants_container{
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.restaurants_link{
+    flex: 1 1 45%;
+}
+.restaurants_card{
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    height: 280px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.restaurants_tag{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #278870;
+    font-weight: bold;
+    background-color: #99e2d0;
+    padding: 5px 10px;
+}
+.restaurants_img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.restaurants_description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    line-height: 1.5em;
+}
+.restaurants .fa-heart{
+    font-size: 24px;
+}
+
+/* animation coeur */
+
+.fa-heart{
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+}
+.fa-heart::after{
+    content: "\f004";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-out;
+}
+.fa-heart:hover::after{
+    font-weight: 900;
+    opacity: 1;
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -297,9 +297,119 @@ footer .fa-handshake-angle{
 .menu_titre{
     font-family: "Shrikhand", sans-serif;
     font-weight: 200;
-    font-size: 160%;
+    font-size: 180%;
 }
 
 .menu_coeur{
     font-size: 25px;
+}
+
+
+/* Entrées */
+
+
+.menu_card{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu_dishes{
+    width: 100%;
+    min-width: 280px;
+    padding-bottom: 20px;
+}
+
+.menu_subtitle{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+hr{
+    height: 3px;
+    width: 45px;
+    background-color: #99e2d0;
+    border: none;
+}
+
+.menu_dish{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin: 20px -5px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.7em;
+    cursor: pointer;
+}
+
+
+/* check roulant */
+.menu_dish:hover .menu_dish-price{
+    transform: translateX(-80px);
+}
+
+.menu_dish:hover .menu_dish-checkbox{
+    transform: translateX(-100%);
+}
+
+.menu_dish:hover .menu_dish-check{
+    transform: rotate(360deg);
+}
+/* fin check roulant */
+
+
+.menu_dish-titre{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 500ms ease-in-out;
+  }
+
+  .menu_dish-caption{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .menu_dish-compo{
+    font-size: 16px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 500ms ease-in-out;
+  }
+
+.menu_dish-price{
+    font-weight: bold;
+    transition: transform 500ms ease-in-out;
+}
+
+.menu_dish-checkbox{
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #99e2d0;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 500ms ease-in-out;
+}
+
+.menu_dish-check{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    transition: transform 500ms ease-in-out;
 }

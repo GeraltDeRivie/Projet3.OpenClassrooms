@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+
+/* css de l'index et des class similaire aux autres pages */
+
+
 body{
     font-family: "Roboto", sans-serif;
     color: black;
@@ -264,4 +268,14 @@ footer * li{
 
 footer .fa-handshake-angle{
     font-size: 11px;
+}
+
+
+/* css des pages menu */
+
+
+.banner{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }

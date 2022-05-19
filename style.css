@@ -222,3 +222,46 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/* footer */
+
+
+footer{
+    background-color: #333333;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer * li{
+    list-style-type: none;
+}
+
+.footer_logo{
+    font-family: "Shrikhand", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.footer_nav{
+    font-size: 16px;
+}
+
+.footer_list{
+    line-height: 1.8em;
+}
+
+.footer_link{
+    color: white;
+}
+
+.footer_icon{
+    margin-right: 8px;
+}
+
+footer .fa-handshake-angle{
+    font-size: 11px;
+}

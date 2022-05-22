@@ -35,6 +35,12 @@ header{
     padding: 15px 0;
 }
 
+.header_icon {
+    position: absolute;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    font-size: 25px;
+  }
 
 /* Localisation */
 

@@ -414,9 +414,11 @@ hr{
     transition: transform 500ms ease-in-out;
 }
 
+/* Bouton commander des menus */
 .menus_btn {
     padding: 20px 50px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
+/* fin bouton menus */

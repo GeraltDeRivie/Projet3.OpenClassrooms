@@ -413,3 +413,16 @@ hr{
     font-weight: 900;
     transition: transform 500ms ease-in-out;
 }
+
+.menus_btn {
+    padding: 20px 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  /* Pied de page */
+
+
+  

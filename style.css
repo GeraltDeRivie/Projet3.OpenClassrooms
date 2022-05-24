@@ -6,8 +6,45 @@
 }
 
 
-/* css de l'index et des class similaire aux autres pages */
+/* SPINNER */
 
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #9356DC;
+    opacity: 0.8;
+    animation: fondu-out 0.1s ease-out;
+    animation-delay: 1.8s;
+    animation-fill-mode: both;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+  .loader_lettre{
+    display: flex;
+    font-family: "Shrikhand";
+    font-size: 200px;
+    text-shadow: 0 0 15px white;
+    animation: load 0.9s linear;
+    animation-iteration-count: 2;
+}
+
+.loader_lettre:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.loader_lettre:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.loader_lettre:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+/* css de l'index et des class similaire aux autres pages */
 
 body{
     font-family: "Roboto", sans-serif;

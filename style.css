@@ -14,7 +14,7 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #9356DC;
+    background-color: black;
     opacity: 0.8;
     animation: fondu-out 0.1s ease-out;
     animation-delay: 1.8s;
@@ -28,7 +28,7 @@
   .loader_lettre{
     display: flex;
     font-family: "Shrikhand";
-    font-size: 200px;
+    font-size: 150px;
     text-shadow: 0 0 15px white;
     animation: load 0.9s linear;
     animation-iteration-count: 2;
@@ -44,6 +44,27 @@
     animation-delay: 0.9s;
 }
 
+  @keyframes load {
+    0% {
+      color: #9356DC;
+      text-shadow: 10px 10px 10px #9356DC;
+    }
+    60% {
+      color: #FF79DA;
+      text-shadow: 0 0 7px #FF79DA;
+    }
+    100% {
+      color: #99E2D0;
+      text-shadow: 10px 10px 10px #99E2D0;
+    }
+  }
+  @keyframes fondu-out {
+    100% {
+      opacity: 0;
+    }
+  }
+
+/* fin animation spinner */
 /* css de l'index et des class similaire aux autres pages */
 
 body{

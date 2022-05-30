@@ -416,6 +416,7 @@ hr{
 
 
 /* check roulant */
+
 .menu_dish:hover .menu_dish-price{
     transform: translateX(-80px);
 }
@@ -427,6 +428,14 @@ hr{
 .menu_dish:hover .menu_dish-check{
     transform: rotate(360deg);
 }
+
+.menu_dish:hover .menu_dish-titre {
+    width: 70%;
+}
+.menu_dish:hover .menu_dish-compo {
+    width: 50%;
+}
+
 /* fin check roulant */
 
 

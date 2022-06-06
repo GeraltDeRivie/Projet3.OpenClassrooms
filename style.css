@@ -130,6 +130,7 @@ header{
 
 #localisation_label{
     font-size: 120%;
+    margin-right: -20px;
 }
 
 .localisation{
@@ -298,7 +299,7 @@ header{
     opacity: 0;
     transition: opacity 500ms ease-out;
 }
-.fa-heart:active::after{
+.fa-heart:hover::after{
     font-weight: 900;
     opacity: 1;
     background: linear-gradient(170deg, #ff79da, #9356dc);

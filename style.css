@@ -482,6 +482,7 @@ hr{
 .menu_dish-price{
     font-weight: bold;
     transition: transform 500ms ease-in-out;
+    margin-right: 13px;
 }
 
 .menu_dish-checkbox{

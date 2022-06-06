@@ -288,25 +288,23 @@ header{
 .fa-heart{
     opacity: 1;
     position: relative;
-    cursor: pointer;
 }
 .fa-heart::after{
     content: "\f004";
+    font-weight: 900;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF76DA));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 500ms ease-out;
+    transition: all 1s linear 0s;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 0);
 }
 .fa-heart:hover::after{
-    font-weight: 900;
-    opacity: 1;
-    background: linear-gradient(170deg, #ff79da, #9356dc);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 

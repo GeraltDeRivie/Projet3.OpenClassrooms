@@ -288,6 +288,8 @@ header{
 .fa-heart{
     opacity: 1;
     position: relative;
+    cursor: pointer;
+    
 }
 .fa-heart::after{
     content: "\f004";
@@ -540,18 +542,13 @@ hr{
 /* fin bouton menus */
 
 
-/* Responsive pour les menus*/
+/* Responsive */
 
 @media screen and (min-width: 992px) {
     .menu_dishes {
-      flex: 0 1 30%;
+        flex: 0 1 30%;
     }
-}
-
-/* Responsive pour l'index (fonctionnement) */
-
-@media screen and (min-width: 992px) {
     .functioning_item {
-      flex: 0 1 30%;
+        flex: 0 1 30%;
     }
 }
